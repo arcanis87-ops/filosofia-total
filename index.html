@@ -13,7 +13,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icons/icon-192x192.png">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding:0; box-sizing:border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #0f172a;
@@ -48,11 +48,7 @@
       justify-content: center;
     }
     .progress-circle svg { transform: rotate(-90deg); }
-    .progress-circle span {
-      position: absolute;
-      font-size: 1.125rem;
-      font-weight: bold;
-    }
+    .progress-circle span { position: absolute; font-size: 1.125rem; font-weight: bold; }
     
     .stats-grid {
       display: grid;
@@ -102,6 +98,7 @@
       transition: background 0.2s;
     }
     .branch-card:hover { background: rgba(30, 41, 59, 0.7); }
+    .branch-card:active { transform: scale(0.98); }
     .branch-icon {
       width: 40px;
       height: 40px;
@@ -126,17 +123,10 @@
       align-items: center;
       margin-bottom: 8px;
     }
-    .btn-primary {
-      background: #6366f1;
-      border: none;
-      color: white;
-    }
+    .btn-primary { background: #6366f1; border: none; color: white; }
     .btn-primary:hover { background: #4f46e5; }
-    .btn-secondary {
-      background: transparent;
-      border: 1px solid #475569;
-      color: #cbd5e1;
-    }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-secondary { background: transparent; border: 1px solid #475569; color: #cbd5e1; }
     .btn-secondary:hover { background: rgba(30, 41, 59, 0.5); }
     
     .bottom-nav {
@@ -169,10 +159,8 @@
       transition: all 0.2s;
     }
     .nav-item:hover { color: #e2e8f0; }
-    .nav-item.active {
-      color: #818cf8;
-      background: rgba(99, 102, 241, 0.1);
-    }
+    .nav-item:active { transform: scale(0.95); }
+    .nav-item.active { color: #818cf8; background: rgba(99, 102, 241, 0.1); }
     .nav-item svg { width: 20px; height: 20px; }
     .nav-item span { font-size: 0.75rem; margin-top: 4px; }
     
@@ -188,6 +176,7 @@
       cursor: pointer;
     }
     .philosopher-card:hover { background: rgba(30, 41, 59, 0.5); }
+    .philosopher-card:active { transform: scale(0.98); }
     .avatar {
       width: 48px;
       height: 48px;
@@ -212,8 +201,10 @@
       border: 1px solid rgba(71, 85, 105, 0.5);
       margin-bottom: 12px;
       cursor: pointer;
+      transition: all 0.2s;
     }
     .entry-card:hover { background: rgba(30, 41, 59, 0.7); }
+    .entry-card:active { transform: scale(0.98); }
     .level-badge {
       width: 40px;
       height: 40px;
@@ -235,7 +226,11 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
     }
+    .level-card:hover { opacity: 0.8; }
+    .level-card:active { transform: scale(0.98); }
     .level-card.active {
       background: rgba(99, 102, 241, 0.2);
       border: 1px solid rgba(99, 102, 241, 0.5);
@@ -253,14 +248,8 @@
       justify-content: center;
       font-weight: bold;
     }
-    .level-card.active .level-number {
-      background: #6366f1;
-      color: white;
-    }
-    .level-card:not(.active) .level-number {
-      background: #334155;
-      color: #94a3b8;
-    }
+    .level-card.active .level-number { background: #6366f1; color: white; }
+    .level-card:not(.active) .level-number { background: #334155; color: #94a3b8; }
     .level-info { flex: 1; }
     .level-info h3 { font-weight: 500; }
     .level-info p { font-size: 0.75rem; color: #94a3b8; }
@@ -272,10 +261,7 @@
       border-radius: 4px;
     }
 
-    .search-box {
-      position: relative;
-      margin-bottom: 16px;
-    }
+    .search-box { position: relative; margin-bottom: 16px; }
     .search-box input {
       width: 100%;
       padding: 8px 16px 8px 40px;
@@ -296,6 +282,83 @@
       width: 16px;
       height: 16px;
     }
+
+    .full-branch-card {
+      padding: 16px;
+      border-radius: 12px;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(71, 85, 105, 0.5);
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .full-branch-card:hover { background: rgba(30, 41, 59, 0.7); }
+    .full-branch-card:active { transform: scale(0.98); }
+    
+    .author-card {
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(71, 85, 105, 0.5);
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .author-card:hover { background: rgba(30, 41, 59, 0.7); }
+    .author-card:active { transform: scale(0.98); }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: #1e293b;
+      border-radius: 16px;
+      max-width: 400px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      border: 1px solid rgba(71, 85, 105, 0.5);
+    }
+    .modal-header {
+      padding: 16px;
+      border-bottom: 1px solid rgba(71, 85, 105, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h2 { font-size: 1.125rem; }
+    .modal-close {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .modal-close:hover { color: white; }
+    .modal-body { padding: 16px; }
+    .modal-body p { color: #94a3b8; font-size: 0.875rem; margin-bottom: 12px; }
+    .modal-body h4 { font-size: 0.875rem; margin-bottom: 8px; color: #cbd5e1; }
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin: 2px;
+    }
   </style>
 </head>
 <body>
@@ -303,8 +366,8 @@
   <div id="page-home" class="page active">
     <div class="container">
       <div class="header">
-        <h1>Filosofía Total</h1>
-        <p>Tu camino hacia el conocimiento filosófico</p>
+        <h1>Filosofia Total</h1>
+        <p>Tu camino hacia el conocimiento filosofico</p>
       </div>
 
       <div class="card progress-card">
@@ -325,23 +388,17 @@
 
       <div class="stats-grid">
         <div class="stat-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           <div class="value">1</div>
           <div class="label">Nivel</div>
         </div>
         <div class="stat-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <div class="value">0</div>
           <div class="label">Quizzes</div>
         </div>
         <div class="stat-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <div class="value">20</div>
           <div class="label">Entradas</div>
         </div>
@@ -349,43 +406,37 @@
 
       <div class="card">
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
-          <span style="font-size: 0.875rem; color: #cbd5e1;">Filósofo del día</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span style="font-size: 0.875rem; color: #cbd5e1;">Filosofo del dia</span>
         </div>
-        <div class="philosopher-card" onclick="showPage('authors')">
+        <div class="philosopher-card" onclick="openAuthorModal(4)">
           <div class="avatar" style="background: rgba(245, 158, 11, 0.2); color: #f59e0b;">W</div>
           <div class="philosopher-info">
             <h3>Ludwig Wittgenstein</h3>
             <p>1889-1951</p>
           </div>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2">
-            <path d="M9 18l6-6-6-6"/>
-          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
         </div>
       </div>
 
       <div class="section-title">
-        <span>Ramas de la Filosofía</span>
-        <button onclick="showPage('branches')">Ver todas →</button>
+        <span>Ramas de la Filosofia</span>
+        <button onclick="showPage('branches')">Ver todas</button>
       </div>
       <div class="branches-grid" id="branches-preview"></div>
 
       <div class="card" style="margin-top: 16px;">
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-          </svg>
-          <span style="font-weight: 600;">Continúa Aprendiendo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span style="font-weight: 600;">Continua Aprendiendo</span>
         </div>
         <button class="btn btn-primary" onclick="showPage('quiz')">
           <span>Tomar un Quiz</span>
-          <span>→</span>
+          <span>-></span>
         </button>
         <button class="btn btn-secondary" onclick="showPage('levels')">
           <span>Explorar Niveles</span>
-          <span>→</span>
+          <span>-></span>
         </button>
       </div>
     </div>
@@ -395,10 +446,10 @@
   <div id="page-branches" class="page">
     <div class="container">
       <div class="header">
-        <h1>Ramas de la Filosofía</h1>
-        <p>Explora las áreas del pensamiento filosófico</p>
+        <h1>Ramas de la Filosofia</h1>
+        <p>Explora las areas del pensamiento filosofico</p>
       </div>
-      <div class="branches-grid" id="branches-full" style="grid-template-columns: 1fr;"></div>
+      <div id="branches-full"></div>
     </div>
   </div>
 
@@ -407,7 +458,7 @@
     <div class="container">
       <div class="header">
         <h1>10 Niveles de Conocimiento</h1>
-        <p>Progresión estructurada del aprendizaje</p>
+        <p>Progresion estructurada del aprendizaje</p>
       </div>
       <div id="levels-list"></div>
     </div>
@@ -418,12 +469,10 @@
     <div class="container">
       <div class="header">
         <h1>Enciclopedia Stanford</h1>
-        <p>20 entradas de filosofía</p>
+        <p>20 entradas de filosofia</p>
       </div>
       <div class="search-box">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         <input type="text" placeholder="Buscar entradas..." id="search-input" oninput="filterEntries()">
       </div>
       <div id="entries-list"></div>
@@ -434,8 +483,8 @@
   <div id="page-authors" class="page">
     <div class="container">
       <div class="header">
-        <h1>Filósofos Destacados</h1>
-        <p>10 filósofos en la base de datos</p>
+        <h1>Filosofos Destacados</h1>
+        <p>10 filosofos en la base de datos</p>
       </div>
       <div id="authors-list"></div>
     </div>
@@ -445,18 +494,16 @@
   <div id="page-quiz" class="page">
     <div class="container">
       <div class="header">
-        <h1>Quiz Filosófico</h1>
+        <h1>Quiz Filosofico</h1>
         <p>Pon a prueba tus conocimientos</p>
       </div>
       <div class="card" style="text-align: center; padding: 32px;">
         <div class="avatar" style="background: rgba(99, 102, 241, 0.2); color: #818cf8; width: 80px; height: 80px; margin: 0 auto 16px; font-size: 2rem;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <h3 style="font-size: 1.125rem; margin-bottom: 8px;">Comienza tu primer Quiz</h3>
         <p style="color: #94a3b8; font-size: 0.875rem; margin-bottom: 16px;">Responde preguntas y gana puntos</p>
-        <button class="btn btn-primary" style="justify-content: center;">
+        <button class="btn btn-primary" style="justify-content: center;" onclick="startQuiz()">
           <span>Iniciar Quiz</span>
         </button>
       </div>
@@ -467,9 +514,22 @@
         </div>
         <div class="stat-card">
           <div class="value">0%</div>
-          <div class="label">Puntuación media</div>
+          <div class="label">Puntuacion media</div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 id="modal-title">Titulo</h2>
+        <button class="modal-close" onclick="closeModal()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
     </div>
   </div>
 
@@ -477,39 +537,27 @@
   <nav class="bottom-nav">
     <div class="nav-container">
       <button class="nav-item active" data-page="home" onclick="showPage('home')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         <span>Inicio</span>
       </button>
       <button class="nav-item" data-page="branches" onclick="showPage('branches')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-17A2.5 2.5 0 0 1 6.5 2z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-17A2.5 2.5 0 0 1 6.5 2z"/></svg>
         <span>Ramas</span>
       </button>
       <button class="nav-item" data-page="levels" onclick="showPage('levels')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M23 6l-9.5 9.5-5-5L1 18"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/></svg>
         <span>Niveles</span>
       </button>
       <button class="nav-item" data-page="encyclopedia" onclick="showPage('encyclopedia')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-17A2.5 2.5 0 0 1 6.5 2z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-17A2.5 2.5 0 0 1 6.5 2z"/></svg>
         <span>Enciclopedia</span>
       </button>
       <button class="nav-item" data-page="authors" onclick="showPage('authors')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         <span>Autores</span>
       </button>
       <button class="nav-item" data-page="quiz" onclick="showPage('quiz')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><point cx="12" cy="17" r="1"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
         <span>Quiz</span>
       </button>
     </div>
@@ -518,162 +566,218 @@
   <script>
     // Data
     const branches = [
-      { id: 'metaphysics', name: 'Metafísica', icon: '🌌', color: '#6366f1', question: '¿Qué es la realidad?' },
-      { id: 'epistemology', name: 'Epistemología', icon: '🧠', color: '#8b5cf6', question: '¿Cómo sabemos lo que sabemos?' },
-      { id: 'logic', name: 'Lógica', icon: '📐', color: '#ec4899', question: '¿Qué hace que un argumento sea válido?' },
-      { id: 'ethics', name: 'Ética', icon: '⚖️', color: '#f59e0b', question: '¿Cómo debemos vivir?' },
-      { id: 'aesthetics', name: 'Estética', icon: '🎨', color: '#10b981', question: '¿Qué es la belleza?' },
-      { id: 'political', name: 'Política', icon: '🏛️', color: '#ef4444', question: '¿Cómo organizarnos?' }
+      { id: 'metaphysics', name: 'Metafisica', icon: '🌌', color: '#6366f1', question: 'Que es la realidad?', desc: 'Estudio de la naturaleza fundamental de la realidad, incluyendo la existencia, objetos, propiedades, espacio y tiempo.' },
+      { id: 'epistemology', name: 'Epistemologia', icon: '🧠', color: '#8b5cf6', question: 'Como sabemos lo que sabemos?', desc: 'Estudio del conocimiento, su naturaleza, origen, limites y validacion. Examina como adquirimos y justificamos creencias.' },
+      { id: 'logic', name: 'Logica', icon: '📐', color: '#ec4899', question: 'Que hace valido un argumento?', desc: 'Estudio de los principios del razonamiento valido. Examina la estructura de argumentos y la inferencia correcta.' },
+      { id: 'ethics', name: 'Etica', icon: '⚖️', color: '#f59e0b', question: 'Como debemos vivir?', desc: 'Estudio de los principios morales que guian la conducta humana. Examina el bien, el mal, la virtud y la justicia.' },
+      { id: 'aesthetics', name: 'Estetica', icon: '🎨', color: '#10b981', question: 'Que es la belleza?', desc: 'Estudio de la belleza, el arte y el gusto. Examina la naturaleza de la experiencia estetica y el valor artistico.' },
+      { id: 'political', name: 'Politica', icon: '🏛️', color: '#ef4444', question: 'Como organizarnos como sociedad?', desc: 'Estudio del gobierno, la justicia social y los derechos. Examina la legitimidad del poder y la organizacion social.' }
     ];
 
     const levels = [
-      { id: 1, name: 'Introducciones Generales', desc: 'Conceptos básicos y panorámica general' },
-      { id: 2, name: 'Pensadores Fundacionales', desc: 'Los primeros filósofos de Grecia' },
-      { id: 3, name: 'Filosofía Medieval', desc: 'La síntesis entre fe y razón' },
-      { id: 4, name: 'Racionalismo y Empirismo', desc: 'El debate sobre el conocimiento' },
-      { id: 5, name: 'Kant y el Idealismo', desc: 'La revolución copernicana' },
-      { id: 6, name: 'Filosofía del siglo XIX', desc: 'Marx, Nietzsche y nuevos paradigmas' },
-      { id: 7, name: 'Filosofía Analítica', desc: 'El giro lingüístico' },
-      { id: 8, name: 'Fenomenología', desc: 'La experiencia humana' },
-      { id: 9, name: 'Filosofía Contemporánea', desc: 'Debates actuales' },
-      { id: 10, name: 'Maestría Filosófica', desc: 'Síntesis y aplicación' }
+      { id: 1, name: 'Introducciones Generales', desc: 'Conceptos basicos y panoramicas general de la filosofia' },
+      { id: 2, name: 'Pensadores Fundacionales', desc: 'Los primeros filosofos de Grecia antigua' },
+      { id: 3, name: 'Filosofia Medieval', desc: 'La sintesis entre fe y razon' },
+      { id: 4, name: 'Racionalismo y Empirismo', desc: 'El debate sobre el origen del conocimiento' },
+      { id: 5, name: 'Kant y el Idealismo', desc: 'La revolucion copernicana en filosofia' },
+      { id: 6, name: 'Filosofia del siglo XIX', desc: 'Marx, Nietzsche y nuevos paradigmas' },
+      { id: 7, name: 'Filosofia Analitica', desc: 'El giro linguistico y la logica moderna' },
+      { id: 8, name: 'Fenomenologia', desc: 'La experiencia humana y el sentido de la existencia' },
+      { id: 9, name: 'Filosofia Contemporanea', desc: 'Debates actuales y nuevas perspectivas' },
+      { id: 10, name: 'Maestria Filosofica', desc: 'Sintesis interdisciplinaria y problemas abiertos' }
     ];
 
     const authors = [
-      { id: 'plato', name: 'Platón', years: '-428 a -348', era: 'Antigüedad', initial: 'P' },
-      { id: 'aristotle', name: 'Aristóteles', years: '-384 a -322', era: 'Antigüedad', initial: 'A' },
-      { id: 'kant', name: 'Immanuel Kant', years: '1724-1804', era: 'Modernidad', initial: 'K' },
-      { id: 'nietzsche', name: 'Friedrich Nietzsche', years: '1844-1900', era: 'Siglo XIX', initial: 'N' },
-      { id: 'wittgenstein', name: 'Ludwig Wittgenstein', years: '1889-1951', era: 'Contemporánea', initial: 'W' },
-      { id: 'hegel', name: 'G.W.F. Hegel', years: '1770-1831', era: 'Modernidad', initial: 'H' },
-      { id: 'sartre', name: 'Jean-Paul Sartre', years: '1905-1980', era: 'Contemporánea', initial: 'S' },
-      { id: 'descartes', name: 'René Descartes', years: '1596-1650', era: 'Modernidad', initial: 'D' },
-      { id: 'aquinas', name: 'Tomás de Aquino', years: '1225-1274', era: 'Medieval', initial: 'T' },
-      { id: 'hume', name: 'David Hume', years: '1711-1776', era: 'Modernidad', initial: 'H' }
+      { id: 1, name: 'Platon', years: '-428 a -348', era: 'Antiguedad', initial: 'P', bio: 'Filosofo griego fundador de la Academia. Teoria de las Ideas, dialogos socraticos.', works: ['La Republica', 'Fedon', 'El Banquete'] },
+      { id: 2, name: 'Aristoteles', years: '-384 a -322', era: 'Antiguedad', initial: 'A', bio: 'Filosofo griego, padre de la logica formal. Sistematizador del conocimiento.', works: ['Metafisica', 'Etica a Nicomaco', 'Organon'] },
+      { id: 3, name: 'Immanuel Kant', years: '1724-1804', era: 'Modernidad', initial: 'K', bio: 'Filosofo aleman que sintetizo racionalismo y empirismo. Idealismo trascendental.', works: ['Critica de la razon pura', 'Critica de la razon pratica'] },
+      { id: 4, name: 'Friedrich Nietzsche', years: '1844-1900', era: 'Siglo XIX', initial: 'N', bio: 'Critico de la moral tradicional y la religion. Voluntad de poder, superhombre.', works: ['Asi hablo Zaratustra', 'Mas alla del bien y del mal'] },
+      { id: 5, name: 'Ludwig Wittgenstein', years: '1889-1951', era: 'Contemporanea', initial: 'W', bio: 'Revoluciono la filosofia del lenguaje. Dos etapas: Tractatus e Investigaciones.', works: ['Tractatus Logico-Philosophicus', 'Investigaciones filosoficas'] },
+      { id: 6, name: 'G.W.F. Hegel', years: '1770-1831', era: 'Modernidad', initial: 'H', bio: 'Idealismo aleman. Dialectica, espiritu absoluto, historia como progreso.', works: ['Fenomenologia del espiritu', 'Ciencia de la logica'] },
+      { id: 7, name: 'Jean-Paul Sartre', years: '1905-1980', era: 'Contemporanea', initial: 'S', bio: 'Existencialismo ateo. La existencia precede a la esencia.', works: ['El ser y la nada', 'El existencialismo es un humanismo'] },
+      { id: 8, name: 'Rene Descartes', years: '1596-1650', era: 'Modernidad', initial: 'D', bio: 'Padre de la filosofia moderna. Duda metodica, cogito ergo sum.', works: ['Discurso del metodo', 'Meditaciones metafisicas'] },
+      { id: 9, name: 'Tomas de Aquino', years: '1225-1274', era: 'Medieval', initial: 'T', bio: 'Maximo representante de la escolastica. Sintesis fe-razon, cinco vias.', works: ['Suma Teologica', 'Suma contra los gentiles'] },
+      { id: 10, name: 'David Hume', years: '1711-1776', era: 'Modernidad', initial: 'H', bio: 'Empirismo britanico. Escepticismo, problema de la induccion.', works: ['Tratado de la naturaleza humana', 'Investigacion sobre el entendimiento'] }
     ];
 
     const entries = [
-      { id: 1, title: 'Pedro Abelardo', branch: 'Ética', level: 5 },
-      { id: 2, title: 'Aborto', branch: 'Ética', level: 3 },
-      { id: 3, title: 'Objetos abstractos', branch: 'Metafísica', level: 6 },
-      { id: 4, title: 'Abducción', branch: 'Epistemología', level: 5 },
-      { id: 5, title: 'Escepticismo académico', branch: 'Epistemología', level: 5 },
-      { id: 6, title: 'Accidente', branch: 'Metafísica', level: 6 },
-      { id: 7, title: 'Teoría de la acción', branch: 'Mente', level: 5 },
-      { id: 8, title: 'Actualismo', branch: 'Metafísica', level: 8 },
-      { id: 9, title: 'Adam Smith', branch: 'Ética', level: 4 },
-      { id: 10, title: 'Estética', branch: 'Estética', level: 3 },
-      { id: 11, title: 'Filosofía africana', branch: 'Comparada', level: 5 },
-      { id: 12, title: 'Agencia', branch: 'Mente', level: 5 },
-      { id: 13, title: 'Akrasia', branch: 'Ética', level: 4 },
-      { id: 14, title: 'Alberto Magno', branch: 'Metafísica', level: 5 },
-      { id: 15, title: 'Al-Ghazali', branch: 'Epistemología', level: 5 },
-      { id: 16, title: 'Sesgo algorítmico', branch: 'Ética', level: 4 },
-      { id: 17, title: 'Analogía', branch: 'Lógica', level: 6 },
-      { id: 18, title: 'Anarquismo', branch: 'Política', level: 4 },
-      { id: 19, title: 'Escepticismo antiguo', branch: 'Epistemología', level: 5 },
-      { id: 20, title: 'Consciencia animal', branch: 'Mente', level: 4 }
+      { id: 1, title: 'Pedro Abelardo', branch: 'Etica', level: 5, summary: 'Filosofo medieval frances. Nominalismo, etica de la intencion, metodo dialectico.' },
+      { id: 2, title: 'Aborto', branch: 'Etica', level: 3, summary: 'Debate sobre el estatus moral del feto y los derechos de la mujer.' },
+      { id: 3, title: 'Objetos abstractos', branch: 'Metafisica', level: 6, summary: 'Entidades sin existencia espacio-temporal: numeros, proposiciones, propiedades.' },
+      { id: 4, title: 'Abduccion', branch: 'Epistemologia', level: 5, summary: 'Inferencia a la mejor explicacion. Razonamiento hipotetico.' },
+      { id: 5, title: 'Escepticismo academico', branch: 'Epistemologia', level: 5, summary: 'Escuela de la Academia que cuestiono la posibilidad del conocimiento.' },
+      { id: 6, title: 'Accidente', branch: 'Metafisica', level: 6, summary: 'Propiedad no esencial de una sustancia segun Aristoteles.' },
+      { id: 7, title: 'Teoria de la accion', branch: 'Mente', level: 5, summary: 'Estudio de la naturaleza de la accion humana intencional.' },
+      { id: 8, title: 'Actualismo', branch: 'Metafisica', level: 8, summary: 'Todo lo que existe es actual. Contra el posibilismo de Lewis.' },
+      { id: 9, title: 'Adam Smith', branch: 'Etica', level: 4, summary: 'Filosofo moral y economista. Mano invisible, simpatia moral.' },
+      { id: 10, title: 'Estetica', branch: 'Estetica', level: 3, summary: 'Estudio de la belleza, el arte y la experiencia estetica.' },
+      { id: 11, title: 'Filosofia africana', branch: 'Comparada', level: 5, summary: 'Diversas tradiciones de pensamiento del continente africano.' },
+      { id: 12, title: 'Agencia', branch: 'Mente', level: 5, summary: 'Capacidad de actuar intencionalmente y ser responsable.' },
+      { id: 13, title: 'Akrasia', branch: 'Etica', level: 4, summary: 'Debilidad de la voluntad. Actuar contra el propio juicio.' },
+      { id: 14, title: 'Alberto Magno', branch: 'Metafisica', level: 5, summary: 'Introdujo a Aristoteles en la filosofia medieval.' },
+      { id: 15, title: 'Al-Ghazali', branch: 'Epistemologia', level: 5, summary: 'Teologo persa. Escepticismo islamico, misticismo sufí.' },
+      { id: 16, title: 'Sesgo algoritmico', branch: 'Etica', level: 4, summary: 'Discriminacion sistematica producida por sistemas de IA.' },
+      { id: 17, title: 'Analogia', branch: 'Logica', level: 6, summary: 'Razonamiento que infiere similitudes entre cosas diferentes.' },
+      { id: 18, title: 'Anarquismo', branch: 'Politica', level: 4, summary: 'Filosofia politica que cuestiona la legitimidad del Estado.' },
+      { id: 19, title: 'Escepticismo antiguo', branch: 'Epistemologia', level: 5, summary: 'Pirronismo. Suspension del juicio como camino a la ataraxia.' },
+      { id: 20, title: 'Consciencia animal', branch: 'Mente', level: 4, summary: 'Debate sobre si los animales tienen experiencias subjetivas.' }
     ];
 
     // Navigation
     function showPage(pageId) {
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+      document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
       document.getElementById('page-' + pageId).classList.add('active');
       document.querySelector('.nav-item[data-page="' + pageId + '"]').classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    // Modal
+    function openModal(title, content) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-body').innerHTML = content;
+      document.getElementById('modal-overlay').classList.add('active');
+    }
+
+    function closeModal(e) {
+      if (!e || e.target === document.getElementById('modal-overlay')) {
+        document.getElementById('modal-overlay').classList.remove('active');
+      }
+    }
+
+    function openEntryModal(id) {
+      var e = entries.find(function(x) { return x.id === id; });
+      var levelColor = e.level <= 3 ? '#10b981' : e.level <= 6 ? '#818cf8' : '#f59e0b';
+      var content = '<p>' + e.summary + '</p>';
+      content += '<h4>Rama</h4><span class="tag">' + e.branch + '</span>';
+      content += '<h4 style="margin-top:12px;">Nivel de dificultad</h4>';
+      content += '<div style="display:flex;align-items:center;gap:8px;">';
+      content += '<div style="width:40px;height:40px;border-radius:8px;background:' + levelColor + '20;color:' + levelColor + ';display:flex;align-items:center;justify-content:center;font-weight:bold;">' + e.level + '</div>';
+      content += '<span style="color:#94a3b8;">de 10</span></div>';
+      openModal(e.title, content);
+    }
+
+    function openAuthorModal(id) {
+      var a = authors.find(function(x) { return x.id === id; });
+      var content = '<p>' + a.bio + '</p>';
+      content += '<h4>Periodo</h4><span class="tag">' + a.years + '</span> <span class="tag">' + a.era + '</span>';
+      content += '<h4 style="margin-top:12px;">Obras principales</h4>';
+      a.works.forEach(function(w) { content += '<span class="tag">' + w + '</span> '; });
+      openModal(a.name, content);
+    }
+
+    function openBranchModal(id) {
+      var b = branches.find(function(x) { return x.id === id; });
+      var content = '<p>' + b.desc + '</p>';
+      content += '<h4>Pregunta central</h4><p style="color:#e2e8f0;">' + b.question + '</p>';
+      openModal(b.name, content);
+    }
+
+    function openLevelModal(id) {
+      var l = levels.find(function(x) { return x.id === id; });
+      var content = '<p>' + l.desc + '</p>';
+      content += '<h4>Puntuacion requerida</h4>';
+      content += '<p style="color:#94a3b8;">' + (id * 60) + ' puntos para desbloquear</p>';
+      openModal(l.name, content);
+    }
+
+    function startQuiz() {
+      openModal('Quiz en desarrollo', '<p>El sistema de quizzes estara disponible proximamente. Mientras tanto, explora las entradas de la enciclopedia para aprender mas sobre filosofia.</p>');
     }
 
     // Render branches preview
     function renderBranchesPreview() {
-      const container = document.getElementById('branches-preview');
-      container.innerHTML = branches.slice(0, 4).map(b => `
-        <div class="branch-card" onclick="showPage('branches')">
-          <div class="branch-icon" style="background: ${b.color}20;">${b.icon}</div>
-          <div class="branch-info">
-            <h3>${b.name}</h3>
-            <p>${b.question}</p>
-          </div>
-        </div>
-      `).join('');
+      var container = document.getElementById('branches-preview');
+      var html = '';
+      for (var i = 0; i < 4; i++) {
+        var b = branches[i];
+        html += '<div class="branch-card" onclick="openBranchModal(\'' + b.id + '\')">';
+        html += '<div class="branch-icon" style="background: ' + b.color + '20;">' + b.icon + '</div>';
+        html += '<div class="branch-info"><h3>' + b.name + '</h3><p>' + b.question + '</p></div></div>';
+      }
+      container.innerHTML = html;
     }
 
     // Render all branches
     function renderBranchesFull() {
-      const container = document.getElementById('branches-full');
-      container.innerHTML = branches.map(b => `
-        <div class="branch-card">
-          <div class="branch-icon" style="background: ${b.color}20; width: 48px; height: 48px; font-size: 1.5rem;">${b.icon}</div>
-          <div class="branch-info">
-            <h3 style="font-weight: 600;">${b.name}</h3>
-            <p>${b.question}</p>
-          </div>
-        </div>
-      `).join('');
+      var container = document.getElementById('branches-full');
+      var html = '';
+      for (var i = 0; i < branches.length; i++) {
+        var b = branches[i];
+        html += '<div class="full-branch-card" onclick="openBranchModal(\'' + b.id + '\')">';
+        html += '<div style="display:flex;align-items:center;gap:12px;">';
+        html += '<div class="branch-icon" style="background: ' + b.color + '20; width: 48px; height: 48px; font-size: 1.5rem;">' + b.icon + '</div>';
+        html += '<div><h3 style="font-weight:600;">' + b.name + '</h3>';
+        html += '<p style="color:#94a3b8;font-size:0.875rem;">' + b.question + '</p></div></div></div>';
+      }
+      container.innerHTML = html;
     }
 
     // Render levels
     function renderLevels() {
-      const container = document.getElementById('levels-list');
-      container.innerHTML = levels.map((l, i) => `
-        <div class="level-card ${i === 0 ? 'active' : ''}">
-          <div class="level-number">${l.id}</div>
-          <div class="level-info">
-            <h3>${l.name}</h3>
-            <p>${l.desc}</p>
-          </div>
-          ${i === 0 ? '<span class="active-badge">Activo</span>' : ''}
-        </div>
-      `).join('');
+      var container = document.getElementById('levels-list');
+      var html = '';
+      for (var i = 0; i < levels.length; i++) {
+        var l = levels[i];
+        var active = i === 0;
+        html += '<div class="level-card' + (active ? ' active' : '') + '" onclick="openLevelModal(' + l.id + ')">';
+        html += '<div class="level-number">' + l.id + '</div>';
+        html += '<div class="level-info"><h3>' + l.name + '</h3><p>' + l.desc + '</p></div>';
+        if (active) { html += '<span class="active-badge">Activo</span>'; }
+        html += '</div>';
+      }
+      container.innerHTML = html;
     }
 
     // Render entries
-    function renderEntries(filter = '') {
-      const container = document.getElementById('entries-list');
-      const filtered = filter 
-        ? entries.filter(e => e.title.toLowerCase().includes(filter.toLowerCase()) || e.branch.toLowerCase().includes(filter.toLowerCase()))
-        : entries;
-      
-      container.innerHTML = filtered.map(e => {
-        const levelColor = e.level <= 3 ? '#10b981' : e.level <= 6 ? '#818cf8' : '#f59e0b';
-        return `
-          <div class="entry-card">
-            <div class="level-badge" style="background: ${levelColor}20; color: ${levelColor};">${e.level}</div>
-            <div class="entry-info">
-              <h3>${e.title}</h3>
-              <p>${e.branch}</p>
-            </div>
-          </div>
-        `;
-      }).join('');
+    function renderEntries(filter) {
+      var container = document.getElementById('entries-list');
+      var filtered = entries;
+      if (filter) {
+        filtered = entries.filter(function(e) {
+          return e.title.toLowerCase().indexOf(filter.toLowerCase()) !== -1 || 
+                 e.branch.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
+        });
+      }
+      var html = '';
+      for (var i = 0; i < filtered.length; i++) {
+        var e = filtered[i];
+        var levelColor = e.level <= 3 ? '#10b981' : e.level <= 6 ? '#818cf8' : '#f59e0b';
+        html += '<div class="entry-card" onclick="openEntryModal(' + e.id + ')">';
+        html += '<div class="level-badge" style="background: ' + levelColor + '20; color: ' + levelColor + ';">' + e.level + '</div>';
+        html += '<div class="entry-info"><h3>' + e.title + '</h3><p>' + e.branch + '</p></div></div>';
+      }
+      container.innerHTML = html;
     }
 
     // Filter entries
     function filterEntries() {
-      const query = document.getElementById('search-input').value;
+      var query = document.getElementById('search-input').value;
       renderEntries(query);
     }
 
     // Render authors
     function renderAuthors() {
-      const container = document.getElementById('authors-list');
-      container.innerHTML = authors.map(a => `
-        <div class="card" style="margin-bottom: 12px; padding: 12px;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div class="avatar" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">${a.initial}</div>
-            <div style="flex: 1;">
-              <h3 style="font-weight: 600;">${a.name}</h3>
-              <p style="font-size: 0.875rem; color: #94a3b8;">${a.years} | ${a.era}</p>
-            </div>
-          </div>
-        </div>
-      `).join('');
+      var container = document.getElementById('authors-list');
+      var html = '';
+      for (var i = 0; i < authors.length; i++) {
+        var a = authors[i];
+        html += '<div class="author-card" onclick="openAuthorModal(' + a.id + ')">';
+        html += '<div style="display:flex;align-items:center;gap:12px;">';
+        html += '<div class="avatar" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">' + a.initial + '</div>';
+        html += '<div style="flex:1;"><h3 style="font-weight:600;">' + a.name + '</h3>';
+        html += '<p style="font-size:0.875rem;color:#94a3b8;">' + a.years + ' | ' + a.era + '</p></div>';
+        html += '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>';
+        html += '</div></div>';
+      }
+      container.innerHTML = html;
     }
 
     // Initialize
     renderBranchesPreview();
     renderBranchesFull();
     renderLevels();
-    renderEntries();
+    renderEntries('');
     renderAuthors();
   </script>
 </body>
