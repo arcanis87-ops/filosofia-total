@@ -774,11 +774,23 @@
     }
 
     // Initialize
-    renderBranchesPreview();
-    renderBranchesFull();
-    renderLevels();
-    renderEntries('');
-    renderAuthors();
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Filosofia Total cargado');
+      renderBranchesPreview();
+      renderBranchesFull();
+      renderLevels();
+      renderEntries('');
+      renderAuthors();
+      console.log('Todos los componentes renderizados');
+    });
+    // Also run immediately in case DOM is already ready
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      renderBranchesPreview();
+      renderBranchesFull();
+      renderLevels();
+      renderEntries('');
+      renderAuthors();
+    }
   </script>
 </body>
 </html>
