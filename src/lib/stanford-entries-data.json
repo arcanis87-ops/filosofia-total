@@ -1,0 +1,342 @@
+[
+  {
+    "id": "abelard",
+    "titleEn": "Abelard, Peter",
+    "titleEs": "Pedro Abelardo",
+    "branch": "Ética",
+    "era": "Edad Media",
+    "mainPhilosophers": ["Pedro Abelardo"],
+    "mainWorks": ["Sic et Non", "Ética o Conócete a ti mismo", "Historia de mis calamidades"],
+    "concepts": ["Nominalismo", "Intencionalidad moral", "Dialéctica", "Ética de la intención"],
+    "philosophicalProblems": ["Problema de los universales", "Naturaleza del pecado", "Relación fe-razón"],
+    "generalLevel": 5,
+    "summaryEs": "Pedro Abelardo (1079-1142) fue un filósofo y teólogo francés, una de las figuras más brillantes y controvertidas del siglo XII. Fundó el nominalismo medieval y desarrolló una ética centrada en la intención del agente, anticipando ideas modernas sobre la moralidad. Su método dialéctica en 'Sic et Non' influyó en el desarrollo de la escolástica.",
+    "keyTerms": [
+      {"term": "Nominalismo", "definition": "Doctrina según la cual los universales son meros nombres sin realidad ontológica independiente"},
+      {"term": "Intencionalidad moral", "definition": "La idea de que la moralidad de una acción depende principalmente de la intención del agente"}
+    ]
+  },
+  {
+    "id": "abortion",
+    "titleEn": "Abortion",
+    "titleEs": "Aborto",
+    "branch": "Ética",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Judith Jarvis Thomson", "Don Marquis", "Mary Anne Warren"],
+    "mainWorks": ["A Defense of Abortion", "Why Abortion is Immoral"],
+    "concepts": ["Derecho a la vida", "Autonomía corporal", "Estatus moral del feto", "Persona moral"],
+    "philosophicalProblems": ["¿Cuándo comienza la vida humana?", "¿Tiene el feto derechos?", "Conflicto de derechos"],
+    "generalLevel": 3,
+    "summaryEs": "El debate filosófico sobre el aborto gira en torno al estatus moral del feto y los derechos de la mujer embarazada. Judith Jarvis Thomson argumentó que incluso si el feto es una persona, el aborto puede ser moralmente permisible basándose en el derecho a la autonomía corporal. Don Marquis sostiene que abortar es inmoral porque priva al feto de un futuro valioso.",
+    "keyTerms": [
+      {"term": "Persona moral", "definition": "Ser con derechos y obligaciones morales, criterio para determinar el estatus ético"},
+      {"term": "Argumento del violinista", "definition": "Experimento mental de Thomson sobre derecho a desconectarse de alguien que depende de uno"}
+    ]
+  },
+  {
+    "id": "abstract-objects",
+    "titleEn": "Abstract Objects",
+    "titleEs": "Objetos abstractos",
+    "branch": "Metafísica",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Platón", "Kurt Gödel", "Edward Zalta"],
+    "mainWorks": ["La República", "¿Qué es un objeto abstracto?"],
+    "concepts": ["Platonismo", "Nominalismo", "Existencia abstracta", "Objetos matemáticos"],
+    "philosophicalProblems": ["¿Existen los números?", "¿Qué son las propiedades?", "Problema del acceso epistémico"],
+    "generalLevel": 6,
+    "summaryEs": "Los objetos abstractos son entidades que no existen en el espacio-tiempo ni tienen poderes causales, como los números, proposiciones y propiedades. El debate entre platonistas (que afirman su existencia independiente) y nominalistas (que la niegan) es central en metafísica. El problema del acceso epistémico cuestiona cómo podríamos conocer tales entidades.",
+    "keyTerms": [
+      {"term": "Platonismo matemático", "definition": "Teoría que sostiene que los objetos matemáticos existen independientemente de nuestras mentes"},
+      {"term": "Anti-realismo abstracto", "definition": "Negación de la existencia independiente de objetos abstractos"}
+    ]
+  },
+  {
+    "id": "abduction",
+    "titleEn": "Abduction",
+    "titleEs": "Abducción",
+    "branch": "Epistemología",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Charles Sanders Peirce", "Gilbert Harman"],
+    "mainWorks": ["Collected Papers", "The Inference to the Best Explanation"],
+    "concepts": ["Inferencia a la mejor explicación", "Razonamiento hipotético", "Lógica del descubrimiento"],
+    "philosophicalProblems": ["¿Es la abducción una forma válida de inferencia?", "Problema de la subdeterminación"],
+    "generalLevel": 5,
+    "summaryEs": "La abducción, también llamada inferencia a la mejor explicación, es una forma de razonamiento que infiere la hipótesis que mejor explica los datos observados. Peirce la distinguió de la deducción y la inducción, considerándola la única forma de razonamiento que genera nuevo conocimiento. Es fundamental en la metodología científica.",
+    "keyTerms": [
+      {"term": "Inferencia a la mejor explicación", "definition": "Proceso de seleccionar la hipótesis que mejor explica los fenómenos observados"},
+      {"term": "Retroducción", "definition": "Término alternativo usado por Peirce para la abducción"}
+    ]
+  },
+  {
+    "id": "academic-skepticism",
+    "titleEn": "Academic Skepticism",
+    "titleEs": "Escepticismo académico",
+    "branch": "Epistemología",
+    "era": "Antigüedad Clásica",
+    "mainPhilosophers": ["Arcesilao", "Carnéades", "Cicerón"],
+    "mainWorks": ["Académicas", "De natura deorum"],
+    "concepts": ["Suspensión del juicio", "Probabilidad", "Critica estoica", "Escepticismo moderado"],
+    "philosophicalProblems": ["¿Es posible el conocimiento?", "Criterio de verdad", "Vida sin certeza"],
+    "generalLevel": 5,
+    "summaryEs": "El escepticismo académico fue una escuela filosófica de la Academia Platónica que cuestionó la posibilidad del conocimiento cierto. Arcesilao argumentó que nada puede conocerse con certeza y que debemos suspender el juicio. Carnéades desarrolló una teoría de lo probable como guía práctica. Esta tradición influyó profundamente en el escepticismo moderno.",
+    "keyTerms": [
+      {"term": "Epoché", "definition": "Suspensión del juicio, concepto central en el escepticismo antiguo"},
+      {"term": "Pithanon", "definition": "Lo probable o persuasivo, guía para la acción según Carnéades"}
+    ]
+  },
+  {
+    "id": "accident",
+    "titleEn": "Accident",
+    "titleEs": "Accidente",
+    "branch": "Metafísica",
+    "era": "Antigüedad Clásica",
+    "mainPhilosophers": ["Aristóteles", "Tomás de Aquino"],
+    "mainWorks": ["Metafísica", "Categorías", "Suma Teológica"],
+    "concepts": ["Sustancia", "Propiedades esenciales", "Predicamentos", "Esencia y existencia"],
+    "philosophicalProblems": ["¿Qué hace que algo sea accidental vs esencial?", "¿Pueden existir accidentes sin sustancia?"],
+    "generalLevel": 6,
+    "summaryEs": "En metafísica aristotélica, un accidente es una propiedad que no pertenece a la esencia de una sustancia. A diferencia de las propiedades esenciales, un accidente puede cambiar sin que la sustancia deje de ser lo que es. Esta distinción es fundamental para la ontología clásica y la teoría de las categorías.",
+    "keyTerms": [
+      {"term": "Sustancia primera", "definition": "El individuo concreto que posee propiedades accidentales y esenciales"},
+      {"term": "Predicamento", "definition": "Categoría ontológica en la que se clasifican los accidentes según Aristóteles"}
+    ]
+  },
+  {
+    "id": "action-theory",
+    "titleEn": "Action Theory",
+    "titleEs": "Teoría de la acción",
+    "branch": "Filosofía de la Mente",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Donald Davidson", "Elizabeth Anscombe", "Harry Frankfurt"],
+    "mainWorks": ["Acciones, razones y causas", "Intención", "Freedom of the Will and the Concept of a Person"],
+    "concepts": ["Intencionalidad", "Causalidad mental", "Razones para actuar", "Acción básica"],
+    "philosophicalProblems": ["¿Qué es actuar intencionalmente?", "¿Son las razones causas?", "Akrasia o debilidad de la voluntad"],
+    "generalLevel": 5,
+    "summaryEs": "La teoría de la acción estudia la naturaleza de la acción humana, incluyendo qué distingue las acciones de los meros movimientos corporales, el papel de las intenciones, y la relación entre razones y causas. Davidson argumentó que las razones son causas de las acciones. Frankfurt introdujo la distinción entre deseos de primer y segundo orden.",
+    "keyTerms": [
+      {"term": "Acción básica", "definition": "Acción que realizamos sin hacer nada más, como mover el brazo"},
+      {"term": "Deseos de segundo orden", "definition": "Deseos sobre qué deseos querer tener, clave en la teoría de Frankfurt sobre la persona"}
+    ]
+  },
+  {
+    "id": "actualism",
+    "titleEn": "Actualism",
+    "titleEs": "Actualismo",
+    "branch": "Metafísica",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["David Lewis", "Alvin Plantinga", "Robert Stalnaker"],
+    "mainWorks": ["On the Plurality of Worlds", "The Nature of Necessity"],
+    "concepts": ["Mundos posibles", "Posibilismo", "Existencia actual", "Contrapartidas"],
+    "philosophicalProblems": ["¿Qué es posible?", "¿Existen los meramente posibles?", "Problema de la cuantificación modal"],
+    "generalLevel": 8,
+    "summaryEs": "El actualismo sostiene que todo lo que existe es actual, negando la existencia de entidades meramente posibles. Se opone al posibilismo de David Lewis, quien afirmaba la existencia de infinitos mundos posibles concretos. Los actualistas reinterpretan los mundos posibles como representaciones abstractas en lugar de realidades concretas.",
+    "keyTerms": [
+      {"term": "Posibilismo", "definition": "Teoría de Lewis que afirma la existencia de mundos posibles concretos"},
+      {"term": "Ersatzismo", "definition": "Teoría que reduce los mundos posibles a construcciones abstractas"}
+    ]
+  },
+  {
+    "id": "adam-smith",
+    "titleEn": "Adam Smith",
+    "titleEs": "Adam Smith",
+    "branch": "Ética",
+    "era": "Modernidad",
+    "mainPhilosophers": ["Adam Smith"],
+    "mainWorks": ["La riqueza de las naciones", "La teoría de los sentimientos morales"],
+    "concepts": ["Mano invisible", "Simpatía moral", "Espectador imparcial", "Economía moral"],
+    "philosophicalProblems": ["Relación entre interés propio y moralidad", "Fundamento de los juicios morales"],
+    "generalLevel": 4,
+    "summaryEs": "Adam Smith (1723-1790) fue un filósofo moral escocés y padre de la economía moderna. En su 'Teoría de los sentimientos morales' desarrolló una teoría del juicio moral basada en la simpatía y el espectador imparcial. Su obra económica es inseparable de sus reflexiones éticas sobre el comercio y la sociedad.",
+    "keyTerms": [
+      {"term": "Espectador imparcial", "definition": "Figura imaginaria que sirve como estándar para juzgar moralmente nuestras acciones"},
+      {"term": "Simpatía", "definition": "Capacidad de ponernos en el lugar de otros, base de la moralidad según Smith"}
+    ]
+  },
+  {
+    "id": "aesthetics",
+    "titleEn": "Aesthetics",
+    "titleEs": "Estética",
+    "branch": "Estética",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Immanuel Kant", "Arthur Schopenhauer", "Theodor Adorno"],
+    "mainWorks": ["Crítica del juicio", "El mundo como voluntad y representación", "Teoría estética"],
+    "concepts": ["Juicio estético", "Belleza", "Sublime", "Experiencia estética", "Arte"],
+    "philosophicalProblems": ["¿Es la belleza objetiva o subjetiva?", "¿Qué distingue el arte de lo que no lo es?"],
+    "generalLevel": 3,
+    "summaryEs": "La estética es la rama de la filosofía que estudia la belleza, el arte y la experiencia estética. Kant analizó el juicio de gusto como desinteresado y universal. Los debates contemporáneos abarcan la definición de arte, el papel del contexto institucional, y la relación entre estética y política.",
+    "keyTerms": [
+      {"term": "Juicio reflexionante", "definition": "Tipo de juicio según Kant que busca principios para lo particular"},
+      {"term": "Desinterés estético", "definition": "Actitud contemplativa sin intereses prácticos o conceptuales"}
+    ]
+  },
+  {
+    "id": "african-philosophy",
+    "titleEn": "African Philosophy",
+    "titleEs": "Filosofía africana",
+    "branch": "Filosofía Comparada",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Kwasi Wiredu", "Paulin Hountondji", "Henry Odera Oruka"],
+    "mainWorks": ["Philosophy and an African Culture", "African Philosophy", "Sage Philosophy"],
+    "concepts": ["Ubuntu", "Sage philosophy", "Etnofilosofía", "Filosofía Sage"],
+    "philosophicalProblems": ["¿Existe una filosofía africana distintiva?", "Relación entre tradición y modernidad"],
+    "generalLevel": 5,
+    "summaryEs": "La filosofía africana engloba diversas tradiciones de pensamiento del continente africano. El debate entre etnofilosofía (sabiduría tradicional colectiva) y filosofía profesional (practicada por académicos individuales) ha sido central. Conceptos como Ubuntu expresan visiones del mundo distintivas que desafían el individualismo occidental.",
+    "keyTerms": [
+      {"term": "Ubuntu", "definition": "Filosofía africana que enfatiza la interconexión humana: 'soy porque somos'"},
+      {"term": "Sage philosophy", "definition": "Tradición de sabios locales que reflexionan críticamente sobre su cultura"}
+    ]
+  },
+  {
+    "id": "agency",
+    "titleEn": "Agency",
+    "titleEs": "Agencia",
+    "branch": "Filosofía de la Mente",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Harry Frankfurt", "Christine Korsgaard", "John Searle"],
+    "mainWorks": ["Freedom of the Will and the Concept of a Person", "The Sources of Normativity"],
+    "concepts": ["Libre albedrío", "Autonomía", "Responsabilidad moral", "Intencionalidad"],
+    "philosophicalProblems": ["¿Qué es ser agente?", "Condiciones de la responsabilidad moral", "Agencia y consciencia"],
+    "generalLevel": 5,
+    "summaryEs": "La agencia es la capacidad de actuar intencionalmente y ser responsable de las propias acciones. Frankfurt distinguió entre personas y meras criaturas basándose en la capacidad de reflexionar sobre los propios deseos. Korsgaard argumenta que la agencia implica comprometerse con principios normativos.",
+    "keyTerms": [
+      {"term": "Autonomía", "definition": "Capacidad de gobernarse a sí mismo según leyes que uno se da"},
+      {"term": "Voluntariedad", "definition": "Carácter de las acciones que proceden del agente como origen"}
+    ]
+  },
+  {
+    "id": "akrasia",
+    "titleEn": "Akrasia",
+    "titleEs": "Akrasia o debilidad de la voluntad",
+    "branch": "Ética",
+    "era": "Antigüedad Clásica",
+    "mainPhilosophers": ["Sócrates", "Aristóteles", "Donald Davidson"],
+    "mainWorks": ["Protágoras", "Ética a Nicómaco", "How is Weakness of the Will Possible?"],
+    "concepts": ["Debilidad de la voluntad", "Incontinencia", "Autocontrol", "Razón práctica"],
+    "philosophicalProblems": ["¿Es posible actuar contra lo que uno sabe que es mejor?", "Estructura de la deliberación práctica"],
+    "generalLevel": 4,
+    "summaryEs": "La akrasia o debilidad de la voluntad es el fenómeno de actuar contra el propio juicio sobre lo mejor. Sócrates negaba su posibilidad (nadie hace el mal a sabiendas), mientras Aristóteles la reconocía como real y la analizó en términos de conocimiento potencial vs actual. Davidson intentó explicarla mediante la partición de la mente.",
+    "keyTerms": [
+      {"term": "Incontinencia", "definition": "Término aristotélico para la akrasia, falta de dominio sobre los impulsos"},
+      {"term": "Continencia", "definition": "Estado intermedio entre virtud y vicio, donde se controlan los malos deseos"}
+    ]
+  },
+  {
+    "id": "albert-great",
+    "titleEn": "Albert the Great",
+    "titleEs": "Alberto Magno",
+    "branch": "Metafísica",
+    "era": "Edad Media",
+    "mainPhilosophers": ["Alberto Magno"],
+    "mainWorks": ["De natura et origine animae", "Comentario a la Metafísica", "De mineralibus"],
+    "concepts": ["Escolástica", "Aristotelismo cristiano", "Filosofía natural", "Síntesis fe-razón"],
+    "philosophicalProblems": ["Integración de Aristóteles con la teología cristiana", "Naturaleza del alma"],
+    "generalLevel": 5,
+    "summaryEs": "Alberto Magno (c.1200-1280) fue un filósofo y teólogo alemán, maestro de Tomás de Aquino. Jugó un papel crucial en la introducción de Aristóteles en la filosofía medieval occidental. Escribió extensamente sobre filosofía natural y defendió la compatibilidad entre fe y razón.",
+    "keyTerms": [
+      {"term": "Escolástica", "definition": "Movimiento filosófico-teológico medieval que sistematizó el saber cristiano"},
+      {"term": "Filosofía natural", "definition": "Estudio medieval de la naturaleza como precursor de la ciencia moderna"}
+    ]
+  },
+  {
+    "id": "al-ghazali",
+    "titleEn": "Al-Ghazali",
+    "titleEs": "Al-Ghazali",
+    "branch": "Epistemología",
+    "era": "Edad Media",
+    "mainPhilosophers": ["Al-Ghazali"],
+    "mainWorks": ["La incoherencia de los filósofos", "La liberación del error", "Ihya ulum al-din"],
+    "concepts": ["Escepticismo islámico", "Misticismo", "Certeza espiritual", "Crítica a la filosofía"],
+    "philosophicalProblems": ["Límites de la razón", "Relación entre filosofía y religión", "Vía mística al conocimiento"],
+    "generalLevel": 5,
+    "summaryEs": "Al-Ghazali (1058-1111) fue un teólogo y filósofo persa que combinó el escepticismo filosófico con el misticismo sufí. En 'La incoherencia de los filósofos' criticó a Avicena y Al-Farabi, argumentando que la razón tiene límites y que la certeza solo se alcanza mediante la experiencia espiritual directa.",
+    "keyTerms": [
+      {"term": "Tahafut", "definition": "Incoherencia o autodestrucción, título de su obra crítica contra los filósofos"},
+      {"term": "Dhawq", "definition": "Degustación espiritual, experiencia mística directa del conocimiento divino"}
+    ]
+  },
+  {
+    "id": "algorithmic-bias",
+    "titleEn": "Algorithmic Bias",
+    "titleEs": "Sesgo algorítmico",
+    "branch": "Ética",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Safiya Noble", "Cathy O'Neil", "Virginia Eubanks"],
+    "mainWorks": ["Algorithms of Oppression", "Weapons of Math Destruction", "Automating Inequality"],
+    "concepts": ["Justicia algorítmica", "Automatización de la discriminación", "Transparencia algorítmica", "Responsabilidad en IA"],
+    "philosophicalProblems": ["¿Son los algoritmos neutrales?", "¿Cómo prevenir la discriminación automatizada?"],
+    "generalLevel": 4,
+    "summaryEs": "El sesgo algorítmico se refiere a la discriminación sistemática producida por sistemas automatizados. Los algoritmos pueden perpetuar y amplificar prejuicios existentes en los datos de entrenamiento. Este campo estudia las implicaciones éticas de la IA y desarrolla marcos para la justicia algorítmica.",
+    "keyTerms": [
+      {"term": "Auditoría algorítmica", "definition": "Proceso de evaluar algoritmos para detectar sesgos y discriminación"},
+      {"term": "Automatización de la desigualdad", "definition": "Fenómeno donde los algoritmos reproducen y amplifican desigualdades sociales"}
+    ]
+  },
+  {
+    "id": "analogy",
+    "titleEn": "Analogy",
+    "titleEs": "Analogía",
+    "branch": "Lógica",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Aristóteles", "Tomás de Aquino", "Mary Hesse"],
+    "mainWorks": ["Analogy of Being", "Models and Analogies in Science"],
+    "concepts": ["Razonamiento analógico", "Analogía del ser", "Modelos científicos", "Analogía entitativa"],
+    "philosophicalProblems": ["¿Es la analogía una forma de inferencia válida?", "¿Cómo aplicamos conceptos a Dios?"],
+    "generalLevel": 6,
+    "summaryEs": "La analogía es una forma de razonamiento que infiere similitudes entre cosas diferentes. En teología, la analogía del ser permite hablar de Dios usando términos creados para las criaturas. En ciencia, los modelos analógicos son herramientas fundamentales para la comprensión y el descubrimiento.",
+    "keyTerms": [
+      {"term": "Analogía de proporcionalidad", "definition": "Uso de un término en sentidos proporcionales pero no idénticos"},
+      {"term": "Modelo analógico", "definition": "Representación que usa similitudes estructurales para explicar fenómenos"}
+    ]
+  },
+  {
+    "id": "anarchism",
+    "titleEn": "Anarchism",
+    "titleEs": "Anarquismo",
+    "branch": "Filosofía Política",
+    "era": "Modernidad",
+    "mainPhilosophers": ["Mijaíl Bakunin", "Pierre-Joseph Proudhon", "Emma Goldman"],
+    "mainWorks": ["Dios y el Estado", "¿Qué es la propiedad?", "Anarchism and Other Essays"],
+    "concepts": ["Estado mínimo", "Libertad negativa", "Mutualismo", "Autogestión"],
+    "philosophicalProblems": ["¿Es el Estado legítimo?", "¿Puede funcionar una sociedad sin Estado?"],
+    "generalLevel": 4,
+    "summaryEs": "El anarquismo es una filosofía política que cuestiona o niega la legitimidad del Estado y aboga por la organización social sin coerción. Varía desde el anarcocomunismo hasta el anarcocapitalismo. Los debates centrales giran en torno a la posibilidad de coordinación social sin autoridad centralizada.",
+    "keyTerms": [
+      {"term": "Mutualismo", "definition": "Sistema de Proudhon basado en intercambio voluntario y asociación libre"},
+      {"term": "Propiedad-posesión", "definition": "Distinción anarquista entre propiedad privada (ilegítima) y posesión personal (legítima)"}
+    ]
+  },
+  {
+    "id": "ancient-skepticism",
+    "titleEn": "Ancient Skepticism",
+    "titleEs": "Escepticismo antiguo",
+    "branch": "Epistemología",
+    "era": "Antigüedad Clásica",
+    "mainPhilosophers": ["Pirrón", "Sexto Empírico", "Timón de Flionte"],
+    "mainWorks": ["Esbozos pirrónicos", "Contra los matemáticos"],
+    "concepts": ["Suspensión del juicio", "Equipolencia", "Ataraxia", "Modos escépticos"],
+    "philosophicalProblems": ["¿Es posible el conocimiento?", "¿Cómo vivir sin creencias?", "Criterio de acción"],
+    "generalLevel": 5,
+    "summaryEs": "El escepticismo antiguo, fundado por Pirrón, sostenía que debemos suspender todo juicio porque para cualquier argumento hay uno igualmente convincente en contrario. Esta suspensión conduce a la ataraxia o tranquilidad del alma. Sexto Empírico sistematizó los modos escépticos para lograr la epoché.",
+    "keyTerms": [
+      {"term": "Equipolencia", "definition": "Equilibrio entre argumentos opuestos que impide decidir"},
+      {"term": "Ataraxia", "definition": "Tranquilidad del alma que resulta de suspender el juicio"}
+    ]
+  },
+  {
+    "id": "animal-consciousness",
+    "titleEn": "Animal Consciousness",
+    "titleEs": "Consciencia animal",
+    "branch": "Filosofía de la Mente",
+    "era": "Contemporaneidad",
+    "mainPhilosophers": ["Thomas Nagel", "Peter Singer", "Colin Allen"],
+    "mainWorks": ["¿Cómo es ser un murciélago?", "Liberación animal", "Species of Mind"],
+    "concepts": ["Experiencia subjetiva", "Estatus moral de los animales", "Dificultad del problema difícil", "Antropomorfismo"],
+    "philosophicalProblems": ["¿Tienen los animales consciencia?", "¿Podemos conocer su experiencia?", "Implicaciones éticas"],
+    "generalLevel": 4,
+    "summaryEs": "La consciencia animal estudia si los animales no humanos tienen experiencias subjetivas. Nagel argumentó que nunca podremos saber 'cómo es' ser otro organismo, especialmente uno con sentidos diferentes. Este problema tiene profundas implicaciones éticas para el trato de los animales.",
+    "keyTerms": [
+      {"term": "Experiencia subjetiva", "definition": "El 'cómo es' para un organismo tener ciertas experiencias"},
+      {"term": "Especismo", "definition": "Discriminación basada en la especie, análoga al racismo o sexismo"}
+    ]
+  }
+]
